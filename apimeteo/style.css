@@ -1,0 +1,107 @@
+/* Arrière-plan complet */
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Envoyer l'arrière-plan derrière tout */
+  background-size: cover;
+  background-position: center;
+  animation: moveClouds 60s linear infinite; /* Effet de mouvement */
+  transition: background-image 2s ease-in-out;
+}
+
+/* Animation de mouvement de l'arrière-plan */
+@keyframes moveClouds {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1000px 0;
+  }
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(to bottom, #3a3a3a, #1a1a1a);
+  color: white;
+  padding: 1.5rem 1rem; /* Réduit la hauteur */
+}
+
+.zeus-container {
+  position: relative;
+}
+
+.zeus-image {
+  width: 120px; /* Réduit légèrement l'image de Zeus */
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  border: 4px solid #fff;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Main forecast section */
+.container {
+  flex: 1; /* S'étend pour pousser le footer en bas */
+  padding: 2rem;
+}
+
+.forecast-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.forecast-item {
+  background: rgba(255, 255, 255, 0.6); /* Transparence blanche */
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.forecast-item:hover {
+  transform: scale(1.05);
+}
+
+.weather-icon {
+  width: 80px; /* Réduit légèrement la taille des icônes */
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+  margin-top: auto; /* Pousse le footer en bas */
+}

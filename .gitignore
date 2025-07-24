@@ -1,0 +1,27 @@
+# ⛔️ Ne pas versionner les dépendances PHP
+/vendor/
+
+# ⚙️ Fichiers générés automatiquement
+composer.lock
+
+# 🖥 MacOS
+.DS_Store
+
+# 🗂 Logs ou fichiers temporaires 
+*.log
+*.tmp
+
+# 🔒 Clés ou config sensibles 
+config/config.php
+
+# ⚠️ Tests ou fichiers locaux 
+test-form.html
+debug.php
+
+# 📦 Dossier de build 
+build/
+
+# 🔧 .env si jamais tu en ajoutes un pour stocker tes clés
+.env
+.env.local
+.env.*.local

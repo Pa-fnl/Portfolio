@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>Paul Fenelon - Développeur Web</title>
+    <!-- À placer dans le <head> de ta page -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lcc74wrAAAAACk_-SE87CVgqAn7QLOCH-fewhki"></script>
+    <link rel="icon" type="image/jpg" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <div class="nav-container">
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo"
+            ><span class="highlight">P</span>aul Fenelon</a
+          >
+          <ul class="nav-links">
+            <li><a href="#home" class="active">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="mobile-nav-toggle">
+            <div class="burger"></div>
+          </button>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="blur-circle blur-primary" style="top: 20%; left: 10%"></div>
+      <div
+        class="blur-circle blur-secondary"
+        style="bottom: 10%; right: 20%"
+      ></div>
+
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-content">
+            <h1>
+              Paul Fenelon,<br />
+              <span class="gradient-text">Développeur Full Stack</span>
+            </h1>
+            <p>
+              En recherche d’alternance dans le développement d’applications, je
+              mets aussi mes compétences au service de projets concrets en
+              freelance. Mon approche ? Allier clarté, utilité et performance.
+            </p>
+            <a href="#contact" class="btn-primary hero-button">Contactez-moi</a>
+          </div>
+
+          <div>
+            <img
+              src="images/pdpwebsite.png"
+              alt="Image de Paul Fenelon"
+              class="hero-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="blur-circle blur-secondary" style="top: 30%; right: 5%"></div>
+
+      <div class="container">
+        <section class="section-title">
+          <h2>Ce que je peux <span class="highlight">faire pour vous</span></h2>
+          <p>
+            Besoin d'un site web ou d'un design unique ? Ma passion et ma
+            créativité sont prêtes à concevoir votre site et réaliser vos
+            projets graphiques avec soin et originalité !
+          </p>
+        </section>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <img
+              src="images/card_conception_icone.png"
+              alt="Développement Web"
+              class="service-icon"
+            />
+            <h3>Conception de Site Web</h3>
+            <div class="card-glass">
+              <p>
+                Sites vitrines, landing pages, refonte de site ou intégration
+                web : je conçois des sites clairs, modernes et adaptés à tous
+                les écrans. De la structure au design, je vous livre un site
+                prêt à l’emploi, optimisé pour vos besoins.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <img
+              src="images/card_design_icone.png"
+              alt="Design"
+              class="service-icon"
+            />
+            <h3>Graphisme & Identité Visuelle</h3>
+            <div class="card-glass">
+              <p>
+                Création de logos simples, choix des couleurs et typographies,
+                bannières et maquettes web. Un design personnalisé pour mettre
+                en valeur votre projet avec clarté, impact et cohérence.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <img
+              src="images/card_opti_icone.png"
+              alt="Maintenance et optimisation"
+              class="service-icon"
+            />
+            <h3>Maintenance & Optimisation</h3>
+            <div class="card-glass">
+              <p>
+                Mise à jour de site, corrections, améliorations de performance
+                et référencement naturel de base (SEO). Je vous aide à garder
+                votre site rapide et efficace.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img
+              src="images/card_securite_icone.png"
+              alt="Sécurisation Web"
+              class="service-icon"
+            />
+            <h3>Sécurisation Web</h3>
+            <div class="card-glass">
+              <p>
+                Mise en place de protections essentielles pour éviter les
+                attaques courantes (bruteforce, injections, spam), mise à jour
+                du CMS (Wordpress), conseils pour renforcer l’accès
+                administrateur et configuration HTTPS.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <p class="pricing-note">
+          "Chaque projet étant unique, mes tarifs s’adaptent à vos besoins. Pour
+          un site vitrine complet, les prestations débutent à 400 €, avec un
+          accompagnement personnalisé tout au long du projet.""
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="blur-circle blur-accent" style="bottom: 20%; left: 15%"></div>
+
+      <div class="container">
+        <section class="section-title">
+          <h2>Mes <span class="highlight">compétences</span></h2>
+          <p>
+            Encore en pleine apprentissage, je transforme peu à peu chaque ligne
+            de code en projet concret. Développeur junior, curieux et motivé, je
+            me forme activement sur ces technologies :
+          </p>
+        </section>
+
+        <div class="skills-container">
+          <div class="skills-grid">
+            <div class="skill-item">
+              <img src="images/cssicone.svg" alt="CSS" class="skill-icon" />
+              <p class="skill-name">CSS</p>
+            </div>
+
+            <div class="skill-item">
+              <img
+                src="images/jsicone.svg"
+                alt="JavaScript"
+                class="skill-icon"
+              />
+              <p class="skill-name">JavaScript</p>
+            </div>
+
+            <div class="skill-item">
+              <img
+                src="images/wordpressicone.svg"
+                alt="WordPress"
+                class="skill-icon"
+              />
+              <p class="skill-name">WordPress</p>
+            </div>
+
+            <div class="skill-item">
+              <img src="images/phpicone.svg" alt="PHP" class="skill-icon" />
+              <p class="skill-name">PHP</p>
+            </div>
+
+            <div class="skill-item">
+              <img src="images/mysqlicone.svg" alt="MySQL" class="skill-icon" />
+              <p class="skill-name">MySQL</p>
+            </div>
+
+            <div class="skill-item">
+              <img src="images/figmaicone.svg" alt="Figma" class="skill-icon" />
+              <p class="skill-name">Figma</p>
+            </div>
+
+            <div class="skill-item">
+              <img
+                src="images/symfonyicone.svg"
+                alt="Symfony"
+                class="skill-icon"
+              />
+              <p class="skill-name">Symfony</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <section class="section-title">
+          <div>
+            <h2>Mes <span class="highlight">projets</span></h2>
+          </div>
+
+          <p>
+            En pleine montée en compétences dans le développement web, ce
+            portfolio retrace les projets qui m'ont permis d'apprendre,
+            d'expérimenter, et de progresser concrètement.
+          </p>
+        </section>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/view_apimeteo4.png" alt="Application météo" />
+              </div>
+              <div class="project-badge badge-formation">
+                Projet en formation
+              </div>
+              <div class="project-info">
+                <h3>🌤️ Application Météo</h3>
+                <p class="tech">HTML / CSS / JavaScript / API</p>
+                <div class="project-overlay">
+                  <p>
+                    Petite app web qui interroge une API météo pour afficher les
+                    prévisions. Projet personnel pour m’initier à l’utilisation
+                    d’API.
+                  </p>
+                  <a
+                    href="https://paulfenelon.fr/apimeteo/"
+                    target="_blank"
+                    class="project-btn"
+                    >Voir l'appli</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/view_portfolio.png" alt="mon site portfolio" />
+              </div>
+              <div class="project-badge badge-personal">Projet personnel</div>
+              <div class="project-info">
+                <h3>Site personnel</h3>
+                <p class="tech">
+                  HTML / CSS / JavaScript / API / PHP / Boostrap
+                </p>
+                <div class="project-overlay">
+                  <p>
+                    Mon propre site web, conçu pour présenter mes compétences.
+                    J’y ai expérimenté plusieurs techniques d’animation,
+                    responsive design et structure CSS propre.
+                  </p>
+                  <a
+                    href="https://github.com/..."
+                    target="_blank"
+                    class="project-btn"
+                    >Voir sur GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/view_dsntv.png" alt="Site média du stage" />
+              </div>
+              <div class="project-badge badge-stage">Projet de stage</div>
+              <div class="project-info">
+                <h3>Site média</h3>
+                <p class="tech">
+                  HTML / CSS / JavaScript / API / Symfony / BDD
+                </p>
+                <div class="project-overlay">
+                  <p>
+                    Durant mon stage, j’ai développé un site pour le styliste
+                    Mike Sylla. Le site média comporte une interface clair pour
+                    la vidéo avec une interface d’administration et un design
+                    adapté à tous les supports.
+                  </p>
+                  <a
+                    href="dsntv_project.html"
+                    target="_blank"
+                    class="project-btn"
+                    >En savoir plus</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="images/view_minianki.png"
+                  alt="Application de révision"
+                />
+              </div>
+              <div class="project-badge badge-exp">Expérimentation</div>
+              <div class="project-info">
+                <h3>Mini application de révision</h3>
+                <p class="tech">HTML / CSS / JavaScript</p>
+                <div class="project-overlay">
+                  <p>
+                    Création d’une mini app de révision simplifié avec
+                    JavaScript. Fonctionne à partir d’un fichier JSON contenant
+                    les questions/réponses. J’ai utilisé ce projet pour mieux
+                    comprendre la manipulation du DOM et les événements JS tout
+                    en révisant ma certification.
+                  </p>
+                  <a
+                    href="https://paulfenelon.fr/idyie/"
+                    target="_blank"
+                    class="project-btn"
+                    >Voir l'appli</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div
+        class="blur-circle blur-secondary"
+        style="bottom: 30%; left: 5%"
+      ></div>
+
+      <div class="container">
+        <section class="section-title">
+          <h2>Discutons de votre <span class="highlight">projet</span></h2>
+          <p>
+            Ravi de prendre contact avec vous ! N'hésitez pas à me laisser un
+            message pour discuter de votre projet ou de toute autre question.
+          </p>
+        </section>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Restons en contact</h3>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <img
+                    src="images/icone_mail.png"
+                    alt="Email"
+                    width="50"
+                    height="50"
+                  />
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>contact@paulfenelon.fr</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <img
+                    src="images/icone_reseaux.png"
+                    alt="Réseaux sociaux"
+                    width="50"
+                    height="50"
+                  />
+                </div>
+                <div class="contact-text">
+                  <h4>Réseaux sociaux</h4>
+                  <p>LinkedIn, GitHub</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="contactForm" action="service/send.php" method="POST">
+              <div class="form-group">
+                <label for="name">Vos Prénom Nom</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Votre email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Votre téléphone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Votre message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label>De préférence, vous souhaitez être contacté :</label>
+                <div class="radio-group">
+                  <div class="radio-item">
+                    <input
+                      type="radio"
+                      id="radio1"
+                      name="radio"
+                      value="par_mail"
+                    />
+                    <label for="radio1">Par email</label>
+                  </div>
+                  <div class="radio-item">
+                    <input
+                      type="radio"
+                      id="radio2"
+                      name="radio"
+                      value="par_tel"
+                    />
+                    <label for="radio2">Par téléphone</label>
+                  </div>
+                </div>
+              </div>
+
+              <input type="submit" class="btn-primary" value="Envoyer" />
+
+              <p id="formMessage" class="mt-3"></p>
+            </form>
+            <p class="recaptcha-disclaimer">
+              Ce site est protégé par reCAPTCHA.
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Confidentialité</a
+              >
+              &nbsp;|&nbsp;
+              <a
+                href="https://policies.google.com/terms"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Conditions d'utilisation</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo d-flex align-items-center">
+            <img src="images/favicon1.png" alt="Logo" />
+            <span>Paul Fenelon - Développeur Web</span>
+          </div>
+
+          <div class="footer-links">
+            <a
+              href="https://www.linkedin.com/in/paul-fenelon-b07227222/"
+              target="_blank"
+              class="social-link"
+            >
+              <img src="images/logo-linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://github.com/Pa-fnl"
+              target="_blank"
+              class="social-link"
+            >
+              <img src="images/logo-git.svg" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2025 Paul Fenelon. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/anime.js"></script>
+  </body>
+</html>
